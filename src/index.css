@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-madero-black: #0d0d0d;
+  --color-madero-dark: #1a1a1a;
+  --color-madero-brown: #2c1e16;
+  --color-madero-gold: #c59d5f;
+  --color-madero-gold-light: #e8c88c;
+  --color-madero-red: #8b1c1c;
+  --color-madero-cream: #f9f6f0;
+}
+
+body {
+  background-color: var(--color-madero-black);
+  color: var(--color-madero-cream);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+}
+
+/* Custom scrollbar for elegance */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-madero-black);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-madero-dark);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-madero-gold);
+}
